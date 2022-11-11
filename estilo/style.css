@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    /* Cores */
+    --cor01: #99A0E1;
+    --cor02: #23295C;
+    --cor03: #5EAD72;
+    --cor04: #34613F;
+    --cor04: #516155;
+
+    /* Cores personalizadas */
+    --cor01-cinza-claro: #8080802f;
+    --cor02-roxo-escuro: #4f5edd;
+    --cor03-cinza-escuro: #808080d0;
+
+    /* Cores padrão */
+    --cor-texto-branco: #ffffff;
+    --cor-texto-preto: #000000;
+
+    /* Fontes */
+    --fonte-destaque: 'DotGothic16', sans-serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo: 'Klee One', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor01-cinza-claro);
+}
+
+header {
+    background-color: var(--cor02);
+    box-shadow: 2px 5px 7px #0000002d;
+    filter: contrast(100%);
+    padding: 2em;
+    min-width: 200px;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 5px 7px #0000009f;
+    color: var(--cor-texto-branco);
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+header p {
+    font-family: var(--fonte-titulo);
+    background-color: var(--cor-texto-branco);
+    box-shadow: 2px 5px 7px #00000069;
+    border-radius:10px 30%;
+    padding: 10px;
+    max-width: 350px;
+    margin: auto;
+    text-shadow: 2px 5px 7px #0000002d;
+    outline: solid 2px #00000012;
+    filter: blur(0.3px);
+}
+
+nav {
+    background-color: var(--cor02);
+    font-family: var(--fonte-titulo);
+    font-size: 14px;
+    padding: 9px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 5px 7px #0000006d;
+    width: 303px;
+    height: 1.3em;
+    max-width: 400px;
+    margin: auto;
+    filter: contrast(100%);
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor-texto-branco);
+    text-shadow: 2px 5px 7px #00000048;
+    background-color: var(--cor01-cinza-claro);
+    box-shadow: 2px 5px 7px #00000044;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    color: var(--cor-texto-preto);
+    transition-duration: .5s;
+}
+
+main {
+    margin: auto;
+    margin-top: 10px;
+}
+
+article {
+    background-color: var(--cor-texto-branco);
+    box-shadow: 2px 5px 7px #0000002d;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    filter: blur(0.1px);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+}
+
+article h1, h2 {
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin: 10px;
+    text-shadow: 2px 5px 7px #00000025;
+
+}
+
+article p {
+    font-family: var(--fonte-padrao);
+    font-size: 14.5px;
+    font-style: italic;
+    text-align: justify;
+    padding: 10px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+ article a:hover {
+    text-decoration: underline;
+}
+
+article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+article .bugdroid {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor-texto-preto);
+    box-shadow: 2px 5px 7px #0000004b;
+    margin: 0px -20px 30px -20px;
+    padding: 10em;
+    position: relative;
+    filter: contrast(100%);
+    filter: blur(0.1px);
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    font-family: var(--fonte-titulo);
+    background-color: var(--cor01-cinza-claro);
+    filter: blur(0.2px);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 7px #00000033;
+    font-weight: 500;
+}
+
+aside ul {
+    margin-left: 40px;
+}
+
+footer {
+    background-color: #000000cc;
+    fill-opacity: unset;
+    filter: blur(0.4px);
+    color: var(--cor-texto-branco);
+    text-align: center;
+    padding: 3px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor01);
+
+}
+
+footer  a:hover {
+    color: var(--cor02-roxo-escuro);
+}
